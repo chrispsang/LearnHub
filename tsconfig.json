@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./",  // Setting the root directory to the common parent directory
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*",
+    "online-learning-platform-frontend/src/**/*"
+, "seeders/20230714-create-quizzes.js", "seeders/20230713-create-courses.js"  ]
+}

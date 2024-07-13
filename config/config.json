@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "myuser",
+    "password": "mypassword",
+    "database": "online_learning_platform",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "myuser",
+    "password": "mypassword",
+    "database": "online_learning_platform_test",
+    "host": "localhost",
+    "dialect": "postgres"
+   
+  },
+  "production": {
+    "username": "myuser",
+    "password": "mypassword",
+    "database": "online_learning_platform_production",
+    "host": "localhost",
+    "dialect": "postgres"
+
+  }
+}
