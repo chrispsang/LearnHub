@@ -9,7 +9,6 @@ LearnHub is a comprehensive online learning platform designed to enhance user en
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 
-
 ## Features
 
 - **User Authentication:** Secure authentication system for user registration, login, and logout to protect user data and ensure privacy.
@@ -66,30 +65,59 @@ LearnHub is a comprehensive online learning platform designed to enhance user en
 
 ### Database Setup
 
-1. **Create a superuser in PostgreSQL:**
+1. **Start the PostgreSQL service:**
+
+    - **Linux:**
+      ```bash
+      sudo service postgresql start
+      ```
+    - **macOS with Homebrew:**
+      ```bash
+      brew services start postgresql
+      ```
+    - **Windows:**
+      ```cmd
+      net start postgresql
+      ```
+
+2. **Access the PostgreSQL command line:**
+
+    - **Linux:**
+      ```bash
+      sudo -u postgres psql
+      ```
+    - **macOS with Homebrew:**
+      ```bash
+      psql postgres
+      ```
+    - **Windows:**
+      ```cmd
+      psql -U postgres
+      ```
+
+3. **Create a superuser in PostgreSQL:**
 
     ```sql
     CREATE USER myuser WITH SUPERUSER PASSWORD 'mypassword';
     ```
 
-2. **Create the database:**
+4. **Create the database:**
 
     ```bash
     psql -U myuser -d postgres -c "CREATE DATABASE online_learning_platform OWNER myuser;"
     ```
 
-3. **Grant all privileges to the user:**
+5. **Grant all privileges to the user:**
 
     ```bash
     psql -U myuser -d postgres -c "GRANT ALL PRIVILEGES ON DATABASE online_learning_platform TO myuser;"
     ```
 
-4. **Verify the creation:**
+6. **Verify the creation:**
 
     ```bash
     psql -U myuser -l
     ```
-
 
 ### Running Migrations and Seeders
 
