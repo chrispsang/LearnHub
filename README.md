@@ -47,7 +47,7 @@ LearnHub is a comprehensive online learning platform designed to enhance user en
 
     ```bash
     git clone https://github.com/chrispsang/LearnHub.git
-    cd learnhub
+    cd LearnHub
     ```
 
 2. **Install backend dependencies:**
