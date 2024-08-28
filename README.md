@@ -138,7 +138,7 @@ LearnHub is a comprehensive online learning platform designed to enhance user en
 1. **Start the backend server (runs on http://localhost:5001):**
 
     ```bash
-    npm run dev
+    npm start
     ```
 
 2. **Start the frontend development server (runs on http://localhost:3000):**
